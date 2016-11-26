@@ -4,14 +4,36 @@
     %meta{:charset => "utf-8"}
     %title James Conant
     %meta{content: 'James Conant', name: 'author'}
+
+    %link{href: 'css/normalize.min.css', rel: 'stylesheet'}
     - file = 'css/styles.css'
     - href = "#{file}?v=#{Digest::SHA256.file(file).to_s}"
     %link{href: href, rel: 'stylesheet'}
+
     %meta{content: "MaUY60IRvED5kUflQsIpO6wwhbXLx9G-SJd9btB1akg",
-          name: "google-site-verification"}
+            name: "google-site-verification"}
+
   %body
-    #under-construction
-      %span#wizard
-        (⊃｡•́‿•̀｡)⊃━
-        %span#spell
-          ☆ﾟ.*･｡ﾟ
+    #container
+      #header
+        James Conant
+      #navigation
+        -#.navigation-item
+        -#  %a{href: 'prj.html'}
+        -#    prj
+        .navigation-item
+          %a{href: 'https://github.com/jamesconant', target: "_blank"}
+            src
+        -#.navigation-item
+        -#  %a{href: 'index.html'}
+        -#    log
+        .navigation-item.active
+          %a{href: ''}
+            bio
+        .navigation-item
+          %a{href: 'mailto:james@conant.io'}
+            msg
+
+      #content
+        #under-construction
+          (⊃｡•́‿•̀｡)⊃━☆ﾟ.*･｡ﾟ

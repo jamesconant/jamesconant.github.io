@@ -28,13 +28,12 @@ body {
     display: inline-block;
     margin: 10px 20px;
     padding: 10px 0px; }
-    #container .navigation-item:hover {
-      border-bottom: 4px solid #e5e5e5; }
-    #container .navigation-item.active {
-      border-bottom: 4px solid #e5e5e5; }
   #container a {
     text-decoration: none;
-    color: #3b73cf; }
+    color: #638ED4; }
+    #container a:hover, #container a.active {
+      text-decoration: underline;
+      text-decoration-color: #638ED4; }
   #container #under-construction {
     color: grey;
     text-align: center;

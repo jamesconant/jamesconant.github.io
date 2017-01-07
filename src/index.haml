@@ -10,30 +10,26 @@
     - href = "#{file}?v=#{Digest::SHA256.file(file).to_s}"
     %link{href: href, rel: 'stylesheet'}
 
-    %meta{content: "MaUY60IRvED5kUflQsIpO6wwhbXLx9G-SJd9btB1akg",
-            name: "google-site-verification"}
+    %meta{content: 'MaUY60IRvED5kUflQsIpO6wwhbXLx9G-SJd9btB1akg',
+          name: 'google-site-verification'}
 
   %body
-    #container
-      #header
-        James Conant
-      #navigation
-        -#.navigation-item
-        -#  %a{href: 'prj.html'}
-        -#    prj
-        .navigation-item
-          %a{href: 'https://github.com/jamesconant', target: "_blank"}
-            src
-        -#.navigation-item
-        -#  %a{href: 'index.html'}
-        -#    log
-        .navigation-item
-          %a{href: 'james_conant_resume_20161118.pdf', target: '_blank'}
-            bio
-        .navigation-item
-          %a{href: 'mailto:james@conant.io', target: "_blank"}
-            msg
+    .menu-item.purple
+      %a.menu-item-title{href: '#', onclick: 'return false;'}
+        THOUGHTS
 
-      #content
-        #under-construction
-          (⊃｡•́‿•̀｡)⊃━☆ﾟ.*･｡ﾟ
+    .menu-item.blue
+      %a.menu-item-title{href: '#', onclick: 'return false;'}
+        PROJECTS
+
+    .menu-item.red
+      %a.menu-item-title{href: 'https://github.com/jamesconant', target: "_blank"}
+        CODE
+
+    .menu-item.yellow
+      %a.menu-item-title{href: 'james_conant_resume_20161118.pdf', target: "_blank"}
+        RESUME
+
+    .menu-item.teal
+      %a.menu-item-title{href: 'mailto:james@conant.io', target: "_blank"}
+        CONTACT

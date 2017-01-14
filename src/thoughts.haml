@@ -1,0 +1,29 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %title James Conant
+    %meta{content: 'James Conant', name: 'author'}
+
+    %link{href: 'css/normalize.min.css', rel: 'stylesheet'}
+    - file = 'css/styles.css'
+    - href = "#{file}?v=#{Digest::SHA256.file(file).to_s}"
+    %link{href: href, rel: 'stylesheet'}
+
+    %meta{content: 'MaUY60IRvED5kUflQsIpO6wwhbXLx9G-SJd9btB1akg',
+          name: 'google-site-verification'}
+
+  %body
+    .menu-item
+      .page-title{href: '#', onclick: 'return false;'}
+        THOUGHTS
+
+    .post
+      %h2 The Title Of Some Blog Post
+      %h4 And A Subtitle
+
+      %p Some text for an article.
+      %p Some text for an article.
+      %p Some text for an article.
+
+

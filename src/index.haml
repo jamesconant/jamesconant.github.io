@@ -9,27 +9,26 @@
     - file = 'css/styles.css'
     - href = "#{file}?v=#{Digest::SHA256.file(file).to_s}"
     %link{href: href, rel: 'stylesheet'}
-
     %meta{content: 'MaUY60IRvED5kUflQsIpO6wwhbXLx9G-SJd9btB1akg',
           name: 'google-site-verification'}
 
   %body
-    .menu-item.purple
+    .menu-item.ceil
+      %a.menu-item-title{href: '#', onclick: 'return false;'}
+        ABOUT
+
+    .menu-item.medium-spring-bud
       %a.menu-item-title{href: '#', onclick: 'return false;'}
         THOUGHTS
 
-    .menu-item.blue
-      %a.menu-item-title{href: '#', onclick: 'return false;'}
+    .menu-item.orange-yellow
+      %a.menu-item-title.new-tab{href: 'https://github.com/jamesconant', target: "_blank"}
         PROJECTS
 
-    .menu-item.red
-      %a.menu-item-title{href: 'https://github.com/jamesconant', target: "_blank"}
-        CODE
-
-    .menu-item.yellow
+    .menu-item.pale-copper
       %a.menu-item-title{href: 'james_conant_resume_20161118.pdf', target: "_blank"}
         RESUME
 
-    .menu-item.teal
+    .menu-item.quinacridone-magenta
       %a.menu-item-title{href: 'mailto:james@conant.io', target: "_blank"}
         CONTACT
